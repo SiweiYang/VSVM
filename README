@@ -1,0 +1,5 @@
+This is basically a DSL for VMs with utility attached to it. VM will be initiated from config file written in the DSL and maintain a record of it's execution and memory map. Ability to set break point and visualize execution state is planned for extension in the original design.
+
+One thing to note is that the separation of working space needs to be flexible so that high level VM can be created with security guaranteed from separation while still possible to emulate real world CPU for experiment and debugging.
+
+Flexible design make it very easy to create VM that handles both machine code and assembly code. All it takes is a wrapper function that converts machine code to corresponding assembly.
